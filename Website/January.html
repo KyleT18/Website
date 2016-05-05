@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>January</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<style>
+  *{box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+<body>
+
+<style>
+body {background-color:#e60000;}
+h1   {color:black; font-size: 350%;}
+p    {color:black; font-size: 118%;}
+</style>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+   <div class="navbar-header">
+      <a class="navbar-brand" href="">Miami Heat</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="https://website-kylet.c9users.io/Website/Homepage.html">Home</a></li>
+      
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Roster <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://website-kylet.c9users.io/Website/ChrisBosh.html">Chris Bosh</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/LuolDeng.html">Luol Deng</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/GoranDragic.html">Goran Dragić</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/GeraldGreen.html">Gerald Green</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/UD.html">Udonis Haslem</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/JoeJohnson.html">Joe Johnson</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/TylerJohnson.html">Tyler Johnson</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/JoshMcRoberts.html">Josh McRoberts</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/JoshRichardson.html">Josh Richardson</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/AmareS.html">Amar'e Stoudemire</a></li>
+          <li><a href="https://website-kylet.c9users.io/Dwyane Wade.html">Dwyane Wade</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/Whiteside.html">Hassan Whiteside</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/JusticeWinslow.html">Justise Winslow</a></li>
+        </ul>
+        
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Schedule <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+      <li><a href="https://website-kylet.c9users.io/Website/Schedule.html">October</a></li>
+      <li><a href="https://website-kylet.c9users.io/Website/November.html">November</a></li>
+      <li><a href="https://website-kylet.c9users.io/Website/December.html">Decmeber</a></li>
+      <li><a href="https://website-kylet.c9users.io/Website/January.html">January</a></li>
+      <li><a href="https://website-kylet.c9users.io/Website/February.html">February</a></li>
+      <li><a href="https://website-kylet.c9users.io/Website/March.html">March</a></li>
+      <li><a href="https://website-kylet.c9users.io/Website/April.html">April</a></li>
+    </ul>
+    
+    <li class="button"><a href="https://website-kylet.c9users.io/News.html">News</a></li>
+        
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">History <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://website-kylet.c9users.io/Website/History1.html">1988-1995</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/History2.html">1995-1997</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/History3.html">1997-2000</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/History4.html">2000-2003</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/History5.html">2003-2005</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/History6.html">2006</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/History7.html">2006-2010</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/History8.html">2011</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/History9.html">2012-2013</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/History10.html">2014</a></li>
+          <li><a href="https://website-kylet.c9users.io/Website/History11.html">2015</a></li>
+        </ul>
+        
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More Information <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://website-kylet.c9users.io/Website/Records.html">Records</a></li>
+          <li><a href="https://website-kylet.c9users.io/Locate Us.html">Contact Us</a></li>
+        </ul>
+        
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Discussion <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://website-kylet.c9users.io">Community Conversation</a></li>
+          </ul>
+</div>
+</nav>
+
+<div class="month">      
+  <ul>
+    <li style="text-align:left"> <a href="https://website-kylet.c9users.io/Website/December.html" data-toggle="tooltip" data-placement="top" title="Last Month">❮</a> </li>
+    <li style="text-align:right"> <a href="https://website-kylet.c9users.io/Website/February.html" data-toggle="tooltip" data-placement="top" title="Next Month">❯</a> </li>
+    <li style="text-align:center">
+      January<br>
+      <span style="font-size:18px">2016</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+  <li>-</li>
+  <li>-</li>
+  <li>-</li>
+  <li>-</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="Dallas Mavericks">1</a> </li>
+  <li>2</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Washington Wizards">3</a> </li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="Indiana Pacers">4</a> </li>
+  <li>5</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="New York Knicks">6</a> </li>
+  <li>7</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Phoenix Suns">8</a> </li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Utah Jazz">9</a> </li>
+  <li>10</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Golden State Warriors">11</a> </li>
+  <li>12</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Los Angeles Clippers">13</a> </li>
+  <li>14</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Denver Nuggets">15</a> </li>
+  <li>16</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Oklahoma City Thunder">17</a> </li>
+  <li>18</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="Milwaukee Bucks">19</a> </li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Washington Wizards">20</a> </li>
+  <li>21</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Toronto Raptors">22</a> </li>
+  <li>23</li>
+  <li>24</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Chicago Bulls">25</a> </li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Brooklyn Nets">26</a> </li>
+  <li>27</li>
+  <li>28</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="@Milwaukee Bucks">29</a> </li>
+  <li>30</li>
+  <li> <a href="#" data-toggle="tooltip" data-placement="top" title="Atlanta Hawks">31</a> </li>
+</ul>
+
+<p> Hover over number to see who the Miami Heat are playing.</p>
+
+</body>
+</html>
